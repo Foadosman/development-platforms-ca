@@ -18,8 +18,11 @@ form.addEventListener("submit", async (event) => {
 
     if (error) {
         message.textContent = error.message;
+        message.className = "error-message";
         return;
     }
     
     message.textContent = "Login successful!";
+    message.className = "success-message";
+    window.location.href = "./index.html";
 });

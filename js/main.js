@@ -25,7 +25,7 @@ async function loadArticles() {
 
         articleElement.innerHTML = `
             <h2>${article.title}</h2>
-            <p>${article.category}</p>
+            <p><strong>Category:</strong> ${article.category}</p>
             <p>${article.body}</p>
         `;
     

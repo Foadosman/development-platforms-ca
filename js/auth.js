@@ -3,6 +3,7 @@ import { supabase } from "./supabase.js";
 const loggedOutNav = document.querySelector("#logged-out-nav");
 const loggedInNav = document.querySelector("#logged-in-nav");
 const logoutButton = document.querySelector("#logout-button");
+const createLink = document.querySelector("#create-link");
 
 async function updateNav() {
     const { data } = await supabase.auth.getUser();
@@ -10,9 +11,11 @@ async function updateNav() {
     if (data.user) {
         loggedOutNav.hidden = true;
         loggedInNav.hidden = false;
+        createLink.hidden = false;
     } else {
         loggedOutNav.hidden = false;
         loggedInNav.hidden = true;
+        createLink.hidden = true;
     }
 }
 

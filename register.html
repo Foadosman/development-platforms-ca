@@ -1,27 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register | News Platform</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-center">
+          <a href="./index.html">Home</a>
+          <a id="create-link" href="./create.html" hidden>Create Article</a>
+        </div>
+        <div id="logged-out-nav">
+          <a href="./login.html">Login</a>
+          <a href="./register.html">Register</a>
+        </div>
+        <div id="logged-in-nav" hidden>
+          <button id="logout-button" type="button">Logout</button>
+        </div>
+      </nav>
+    </header>
     <main>
+      <form id="register-form">
         <h1>Create account</h1>
-        <form id="register-form">
-            <label for="email">Email</label>
-            <input type="email" id="email" required>
 
-            <label for="password">Password</label>
-            <input type="password" id="password" minlength="6" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
 
-            <button type="submit"Register></button>
-        </form>
+        <label for="password">Password</label>
+        <input type="password" id="password" minlength="6" required />
 
-        <p id="message"></p>
+        <button type="submit">Register</button>
+      </form>
+
+      <p id="message"></p>
     </main>
-
     <script type="module" src="./js/register.js"></script>
-</body>
+    <script type="module" src="./js/auth.js"></script>
+  </body>
 </html>

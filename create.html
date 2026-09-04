@@ -1,29 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>create | Article | News Platform</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-center">
+          <a href="./index.html">Home</a>
+          <a id="create-link" href="./create.html" hidden>Create Article</a>
+        </div>
+        <div id="logged-out-nav">
+          <a href="./login.html">Login</a>
+          <a href="./register.html">Register</a>
+        </div>
+        <div id="logged-in-nav" hidden>
+          <button id="logout-button" type="button">Logout</button>
+        </div>
+      </nav>
+    </header>
     <main>
+      <form id="article-form">
         <h1>Create article</h1>
-        <form id="article-form">
-            <label for="title">Title</label>
-            <input type="text" id="title" required>
 
-            <label for="category">Category</label>
-            <input type="text" id="category" required>
+        <label for="title">Title</label>
+        <input type="text" id="title" required />
 
-            <label for="body">Article</label>
-            <textarea id="body" required></textarea>
+        <label for="category">Category</label>
+        <input type="text" id="category" required />
 
-            <button type="submit">Publish article</button>
-        </form>
+        <label for="body">Article</label>
+        <textarea id="body" required></textarea>
 
-        <p id="message"></p>
+        <button type="submit">Publish article</button>
+      </form>
+
+      <p id="message"></p>
     </main>
     <script type="module" src="./js/create.js"></script>
-</body>
+    <script type="module" src="./js/auth.js"></script>
+  </body>
 </html>

@@ -18,9 +18,11 @@ form.addEventListener("submit", async (event) => {
 
     if (error) {
         message.textContent = error.message;
+        message.className = "error-message";
         return;
     }
 
     message.textContent = "Registration successful! Check your email to confirm your account.";
+    message.className = "success-message";
     form.reset();
 });

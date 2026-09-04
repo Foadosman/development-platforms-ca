@@ -35,9 +35,11 @@ form.addEventListener("submit", async (event) => {
 
         if (error) {
             message.textContent = error.message;
+            message.className = "error-message";
             return;
         }
 
         message.textContent = "Article published successfully!";
+        message.className = "success-message";
         form.reset();
 });

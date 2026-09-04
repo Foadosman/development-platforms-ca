@@ -24,5 +24,8 @@ form.addEventListener("submit", async (event) => {
     
     message.textContent = "Login successful!";
     message.className = "success-message";
-    window.location.href = "./index.html";
+    
+    setTimeout(() => {
+        window.location.href = "./index.html";
+    }, 2000);
 });

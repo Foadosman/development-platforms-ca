@@ -42,4 +42,8 @@ form.addEventListener("submit", async (event) => {
         message.textContent = "Article published successfully!";
         message.className = "success-message";
         form.reset();
+
+        setTimeout(() => {
+            window.location.href = "./index.html";
+        }, 2000);
 });

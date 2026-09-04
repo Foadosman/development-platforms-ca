@@ -22,6 +22,15 @@ users can register an account, confirm their email, log in, see articles and pub
 - Supabase
 - Netlify
 
+## Installation
+
+1. Clone the repository.
+2. Open the project folder.
+3. Run the project using a local server like Live Server.
+4. Open `index.html` in the browser
+
+No npm installation required
+
 ## Supabase Configuration
 
 Supabase is used for authentication and database storage.
@@ -41,3 +50,8 @@ Articles can be seen publicly, and only authenticated users can create articles.
 
 ## Live Website
 
+https://development-platform-ca.netlify.app/
+
+## GitHub Repository
+
+https://github.com/Foadosman/development-platforms-ca
